@@ -1,0 +1,8 @@
+# java related
+*.class
+
+# Python related
+*.pyc
+
+# general
+*.log
