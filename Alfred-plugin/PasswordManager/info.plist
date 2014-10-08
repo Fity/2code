@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>info.fity.crypt</string>
+	<key>connections</key>
+	<dict>
+		<key>2E6364FD-CEAF-4EDE-9302-1025727694B3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B4AEA5C6-38CA-4FBF-BC5E-0F25CACB39BB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>B4AEA5C6-38CA-4FBF-BC5E-0F25CACB39BB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6C721F56-146E-498B-B4CB-3E9D2156CB04</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>AFCCB1C2-4D63-4262-99B1-37BD64C2197B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Fity(imfity@gmail.com)</string>
+	<key>description</key>
+	<string>Password Manager(Locally)</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>PasswordManager</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>Password copyed to Clipboard</string>
+				<key>title</key>
+				<string>Password Manager</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>6C721F56-146E-498B-B4CB-3E9D2156CB04</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>pwd</string>
+				<key>runningsubtext</key>
+				<string>Generating/Searching your password</string>
+				<key>script</key>
+				<string>import workflow
+
+
+query = ''' {query} '''
+workflow.query(query)</string>
+				<key>subtext</key>
+				<string>Like Github/Google/Twitter/Quora/Douban...</string>
+				<key>title</key>
+				<string>Your Site name or Account name</string>
+				<key>type</key>
+				<integer>3</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>2E6364FD-CEAF-4EDE-9302-1025727694B3</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>58</integer>
+				<key>script</key>
+				<string>import workflow
+
+query = ''' {query} '''
+workflow.do(query)</string>
+				<key>type</key>
+				<integer>3</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>B4AEA5C6-38CA-4FBF-BC5E-0F25CACB39BB</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>AFCCB1C2-4D63-4262-99B1-37BD64C2197B</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Password Manager based on sqlite3 and pycrypto.
+Support get, gen and del actions.
+Add action will be done in the future.</string>
+	<key>uidata</key>
+	<dict>
+		<key>2E6364FD-CEAF-4EDE-9302-1025727694B3</key>
+		<dict>
+			<key>ypos</key>
+			<real>80</real>
+		</dict>
+		<key>6C721F56-146E-498B-B4CB-3E9D2156CB04</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>AFCCB1C2-4D63-4262-99B1-37BD64C2197B</key>
+		<dict>
+			<key>ypos</key>
+			<real>160</real>
+		</dict>
+		<key>B4AEA5C6-38CA-4FBF-BC5E-0F25CACB39BB</key>
+		<dict>
+			<key>ypos</key>
+			<real>100</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>fity.info</string>
+</dict>
+</plist>
