@@ -35,7 +35,6 @@ def _get_data_dir():
     bundleid = plist.bundleid
     data_dir = os.path.join(STORAGE_DIR, bundleid)
     if not os.path.exists(data_dir):
-        logger.debug('create the data dir')
         os.makedirs(data_dir, 0755)
     return data_dir
 DATA_DIR = _get_data_dir()
