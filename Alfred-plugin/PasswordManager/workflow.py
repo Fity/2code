@@ -52,14 +52,12 @@ def do(query):
     # query is a json string
     rst = crypt.do(query.strip())
     print rst
-    # print repr(query)
 
 
 if __name__ == '__main__':
     # print 'sys.argv:', sys.argv
-    # print '=========='
-    # query(' a ')
     query = 'github'
     args = parse([query, ])
-    rst = crypt.query(*args)
-    print rst
+    print args
+    # rst = crypt.query(*args)
+    # print rst

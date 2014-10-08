@@ -169,13 +169,11 @@ class DB(object):
     def insert(self, site, account):
         self.decrypt()
         password = passwd()
-        print 'password generate:', password
         if self._insert(site, account, password) and self._insert(site, account):
             self.encrypt()
         else:
             password = None
             os.unlink(self.db)
-        print 'password to return:', password
         return password
 
     def _insert(self, site, account, password=None):
@@ -376,7 +374,6 @@ class Application(tk.Frame):
 
     def hit_handler(self, event):
         self.get()
-        # print 'your input is:', self.entry.get()
 
     def get(self):
         v = self.entry.get()
