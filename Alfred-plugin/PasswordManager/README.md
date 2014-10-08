@@ -15,7 +15,7 @@ If action is not given, it will be treat as `get` and the account will be `defau
 Examples
 =========
 `pwd github`  
-`pwd github fity`
+`pwd github fity`  
 `pwd github get fity`
 
 TODO

@@ -3,7 +3,6 @@
 Local password manager for Alfred
 @Author Fity(imfity@gmail.com)
 '''
-import hashlib
 try:
     import simplejson as json
 except ImportError:
