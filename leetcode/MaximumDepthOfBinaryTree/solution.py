@@ -6,6 +6,7 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution:
     # @param root, a tree node
     # @return an integer
