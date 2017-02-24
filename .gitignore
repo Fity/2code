@@ -58,6 +58,9 @@ docs/_build/
 # PyBuilder
 target/
 
+# FE related
+node_modules/
+
 ###################################################
 # general
 *.log
